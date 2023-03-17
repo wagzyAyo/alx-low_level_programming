@@ -8,17 +8,14 @@
 */
 int main(void)
 {
-int i = 97;
-while (i <= 122)
+int i;
+for (i = 97; i < 123; i++)
 {
-	if (i == 101 || n == 113)
-	{
-		i++;
-		continue
-
-	putchar(i);
-	i++;
+if (i != 101 && i != 113)
+{
+putchar(i);
 }
-putchar("\n")
-	return (0);
+}
+putchar('\n');
+ return (0);
 }
