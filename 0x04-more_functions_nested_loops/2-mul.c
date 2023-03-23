@@ -5,9 +5,9 @@
 * @b: b - variable
 * Return: Always 0.
 */
-int mult(int a, int b)
+int mul(int a, int b)
 {
-int mult;
-mult = a * b;
-return (mult);
+int mul;
+mul = a * b;
+return (mul);
 }
