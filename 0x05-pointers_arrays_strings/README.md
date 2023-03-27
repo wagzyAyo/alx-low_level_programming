@@ -1,1 +1,1 @@
-pointers ,arrays and strings in C language
+README.md for pointers,array and strings
