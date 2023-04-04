@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * _strstr - Main function
-* @haystack: char i 
+* @haystack: char i
 * @needle: char j
 * Return:return  0 (Success)
 */
