@@ -1,6 +1,9 @@
 #include <stdio.h>
 /*
-* main :  prints file name
+* main - prints program name
+* @argc : argument count
+* @argv : argument array
+*
 * return : always 0 (success)
 */
 
