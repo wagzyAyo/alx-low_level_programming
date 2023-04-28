@@ -4,6 +4,8 @@ _start:
          mov edx , len
          mov exc , msg
          mov ebx ,1
+         call printf
+         ret
          mov eax , 4 ;system call
          int 0x80 ;To call kernel
          mov eax , 1 ;Sysytem call
