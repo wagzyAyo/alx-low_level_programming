@@ -1,4 +1,5 @@
 section .text
+extern printf
       global_start
 _start:
          mov edx , len
