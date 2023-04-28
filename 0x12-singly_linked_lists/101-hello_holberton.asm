@@ -7,5 +7,5 @@ _start:
   call printf
   mov eax, 1
   ret
-msg: db "Hello, Holberton",10
+msg: db "Hello, Holberton\n",0
 len equ $ -msg
