@@ -2,12 +2,12 @@
 #include <string.h>
 #include "lists.h"
 /**
- * add_node_end - function that adds nodes at the end list_t
- * @head : pointer to lists_t
- * @str : string to be added in node
- *
- * Return: the address of the new element, or NULL if it failed
- **/
+* add_node_end - function that adds nodes at the end list_t
+* @head : pointer to lists_t
+* @str : string to be added in node
+*
+* Return: the address of the new element, or NULL if it failed
+**/
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new;
@@ -31,7 +31,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (new);
 	}
 
-	while (tmp->next)
+	while (temp->next)
 		temp = temp->next;
 	temp->next = new;
 
