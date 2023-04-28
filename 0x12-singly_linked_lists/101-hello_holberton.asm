@@ -6,7 +6,7 @@ _start:
   xor eax, eax
   mov ecx , msg
   call printf
-  mov eax, 1
+  mov eax, 0
   ret
 msg: db `Hello, Holberton`,0XA , 0
 len equ $ -msg
