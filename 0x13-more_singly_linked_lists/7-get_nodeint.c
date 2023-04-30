@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 /**
  * get_nodeint_at_index - Returns a node at certain index
  * @head :pointer to the first node
