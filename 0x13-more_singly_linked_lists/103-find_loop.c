@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * find_listint_loop - finds a loop in a linked list
- * @head: pointer to the first node 
+ * @head: pointer to the first node
  *
  * Return:Address of the node where the loop starts or NULL if there is none
  **/
@@ -13,7 +13,7 @@ listint_t *find_listint_loop(listint_t *head)
 	if (!head)
 		return (NULL);
 
-	while (i &&  && j->next)
+	while (i && j && j->next)
 	{
 		j = j->next->next;
 		i = i->next;
