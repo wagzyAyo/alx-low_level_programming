@@ -1,12 +1,11 @@
 section  .text
-   global_start
+   global main
    extern printf
-_start:
-  mov edi , len
+main:
+  mov edi , format
   xor eax, eax
   mov ecx , msg
   call printf
   mov eax, 0
   ret
-msg: db `Hello, Holberton`,0XA , 0
-len equ $ -msg
+format: db `Hello, Holberton`,10
