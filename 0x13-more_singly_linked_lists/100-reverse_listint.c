@@ -10,7 +10,7 @@ listint_t *reverse_listint(listint_t **head)
 	listint_t *bfr = NULL;
 	listint_t *aft = NULL;
 
-	while (head)
+	while (*head)
 	{
 		aft = (*head)->next;
 		(*head)->next = bfr;

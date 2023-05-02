@@ -3,7 +3,7 @@
  * free_listint_safe - frees a linked list
  * @h : pointer to the first node
  *
- * Return:The sixe of node that was freed
+ * Return:The size of node that was freed
  **/
 size_t free_listint_safe(listint_t **h)
 {
