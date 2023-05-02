@@ -29,9 +29,10 @@ size_t free_listint_safe(listint_t **h)
 			free(*h);
 			*h = NULL;
 			size++;
-			braek;
+			break;
 		}
 	}
+
 	*h = NULL;
 
 	return (size);
