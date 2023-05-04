@@ -11,7 +11,7 @@ void print_binary(unsigned long int n)
 
 	for (b = 63 ; b >= 0; b--)
 	{
-		numb = n >> b;
+		long_int = n >> b;
 
 		if (long_int & 1)
 		{
@@ -21,6 +21,6 @@ void print_binary(unsigned long int n)
 		else if (numb)
 			_putchar('0');
 	}
-if (!numb)
-_putchar('0');
+	if (!numb)
+		_putchar('0');
 }
