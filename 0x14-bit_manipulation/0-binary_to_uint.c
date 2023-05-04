@@ -8,10 +8,10 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int a;
-	unsigned int dec = 0;  //dec is decimal
+	unsigned int dec = 0;
 
 	if (!b)
-		return (0); //if there is no integer (b) return 0
+		return (0);
 
 	for (a = 0; b[a]; a++)
 	{
