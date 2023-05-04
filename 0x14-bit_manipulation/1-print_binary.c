@@ -7,20 +7,19 @@
 void print_binary(unsigned long int n)
 {
 	int b, numb = 0;
-	unsigned long int long_int;
+	unsigned long int move;
 
-	for (b = 63 ; b >= 0; b--)
+	for (b = 63; b >= 0; b--)
 	{
-		long_int = n >> b;
-
-		if (long_int & 1)
+		move = n >> b;
+		if (move & 1)
 		{
-			 numb++;
-			_putchar('1');
+			numb++;
+			_putchar ('1');
 		}
 		else if (numb)
-			_putchar('0');
+			_putchar ('0');
 	}
-	if (!numb)
-		_putchar('0');
+	if (!num)
+	_putchar ('0');
 }
