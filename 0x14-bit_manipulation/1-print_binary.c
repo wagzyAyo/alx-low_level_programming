@@ -2,7 +2,7 @@
 /**
  *print_binary - prints binary representation of numbers
  *@n : unsigned long integer
- *
+ *yy
  **/
 void print_binary(unsigned long int n)
 {
