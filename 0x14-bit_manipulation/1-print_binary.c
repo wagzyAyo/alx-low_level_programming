@@ -20,6 +20,6 @@ void print_binary(unsigned long int n)
 		else if (numb)
 			_putchar ('0');
 	}
-	if (!num)
+	if (!numb)
 	_putchar ('0');
 }
