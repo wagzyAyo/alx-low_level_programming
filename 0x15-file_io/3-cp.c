@@ -61,20 +61,20 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 
-	buff = create_buff(argv[2]);
+	buff = create_buffer(argv[2]);
 	f = open(argv[1], O_RDONLY);
 	a = read(f, buff, 1024);
 	t = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
-		if (f == -1 || r == -1)
+		if (f == -1 || a == -1)
 		{
-			dprintf(STDEER_FILENO, "Error: Cant read from file %s\n", argv[1]);
+			dprintf(STDERR_FILENO, "Error: Cant read from file %s\n", argv[1]);
 			free(buff);
 			exit(98);
 		}
 
-		b = write(t, buff, r);
+		b = write(t, buff, a);
 		if (t == -1 || b == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Cant write to %s\n", argv[2]);
