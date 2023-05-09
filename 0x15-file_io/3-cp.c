@@ -34,9 +34,9 @@ void close_file(int fd)
 
 	u = close(fd);
 
-	if (c == -1)
+	if (u == -1)
 	{
-		dprintf(STERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 }
@@ -50,7 +50,7 @@ void close_file(int fd)
  *
  * Return: 0 if successful
  **/
-int main(argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int f, t, a, b;
 	char *buff;
