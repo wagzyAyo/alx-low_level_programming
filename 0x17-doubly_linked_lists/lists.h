@@ -1,5 +1,9 @@
-#ifndef __LISTS__
-#define __LISTS__
+#ifndef _LISTS_
+#define _LISTS_
+
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * struct dlistint_s - doubly linked list
  * @n: integer
